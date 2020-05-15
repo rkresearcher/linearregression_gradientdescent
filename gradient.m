@@ -15,9 +15,6 @@ for i = 1:iteration
     h = (x*para -y);
    for j = 1:nof
         para(j) = para(j)-alpha * (1/nfe) * h' * x(:,j);
-   %     para(2) = para(2)-alpha * (1/nfe) * h' * x(:,2);
-    %    para(3) = para(3)-alpha * (1/nfe) * h' * x(:,3);
-     %   para(4) = para(4)-alpha * (1/nfe) * h' * x(:,4);
     end
     cv(i) = cost(x,y,para);
 end
