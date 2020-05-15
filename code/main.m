@@ -54,12 +54,12 @@ smoker_in = input('are you smoker? 0 for no and 1 for yes: ');
 age_in = norma(age_in,age);
 weight_in = norma(weight_in,weight);
 disp('High Pressure')
-h = p1(1) + p1(2)*age_in + p1(3)*weight_in + p1(3)*smoker_in;
+h = p1(1) + p1(2)*age_in + p1(3)*weight_in + p1(4)*smoker_in;
 figure(10)
 plot(h)
 disp(h)
 disp('Low Pressure')
-h = p2(1) + p2(2)*age_in + p2(3)*weight_in + p2(3)*smoker_in;
+h = p2(1) + p2(2)*age_in + p2(3)*weight_in + p2(4)*smoker_in;
 disp(h)
 
 
